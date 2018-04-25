@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(void)
+{
+//identify variables
+float hours, hourRate, salary;
+
+//get input
+printf("%s","Please enter hours worked (enter -1 to end program):\n");
+scanf("%f",&hours);
+//loop until value is entered
+	while(hours >= 0.0)
+	{
+	//get hourly rate
+	printf("%s","Please enter your hourly rate of pay:"\n);
+	scanf("%f", &hourRate);
+
+		if (hours <= 40);
+		{
+		//calculate salary
+		salary = hours * hourRate
+		}
+		else
+		{
+		salary = 40*hourRate + ((hours - 40) * 1.5 * hourRate);
+		}
+	printf("%s","Please enter hours worked (enter -1 to end program):\n");
+	scanf("%f",&hours);
+	}
+//print salary
+printf("Salary is $%.2f \n\n", salary);
+}
